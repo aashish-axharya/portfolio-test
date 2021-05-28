@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact</title>
+  <meta name="description" content="Info System Coursework 3" />
+  <meta name="author" content="Aashish Acharya" />
+  <meta name="londonmetID" content="20049382 " />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js"></script>
+
+  <style>
+    body {
+      font-family: sans-serif, "Times New Roman";
+    }
+
+    .contact-form {
+      /*making the text inside the form class readable*/
+      color: #fff;
+      text-align: center;
+      padding-top: 10px;
+      max-width: 100%;
+    }
+
+    form {
+      width: 500px;
+      margin: auto;
+      position: relative;
+    }
+
+    input {
+      /*increasing the width of the input boxes*/
+      width: 400px;
+      height: 25px;
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="staticName"><a href="">Aashish Acharya |</a></div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a class="current" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="contact-form">
+
+      <h3 style="text-align: center">Send me an email</h3>
+      <form name="messageForm" onsubmit="validation()">
+        <!--calling the validation function when the submit button is clicked-->
+
+        <p><label for="name">Name</label></p>
+        <input type="text" id="name" />
+        <p><label for="email">Email Address</label></p>
+        <input type="email" id="email" />
+        <p><label for="subject">Subject</label></p>
+        <input type="text" id="subject" />
+        <p><label for="message">Message</label></p>
+        <!--Text box and Placeholder for the message box-->
+        <textarea id="message" rows="5" placeholder="Write your message here..." style="width: 400px"></textarea>
+        <p>
+          
+          <input type="submit" style="
+                border: 1px solid white;
+                width: 100px;
+                text-align: center;
+                background-color: #222629;
+                color: white;
+              " />
+        </p>
+      </form>
+
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="footer-content">
+        <p style="font-size: 20px; color: #86c232">CONNECT WITH ME</p>
+        <ul class="socialLinks">
+          <li class="logo">
+            <a href="">
+              <img src="logos/github.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/email.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/instagram.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/twitter.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/youtube.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/discord.png" width="40" height="40" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">&copy; Aashish Acharya | CourseWork 3</div>
+    </div>
+  </footer>
+</body>
+
+</html>

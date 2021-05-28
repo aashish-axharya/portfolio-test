@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <meta name="description" content="Info System Coursework 3" />
+  <meta name="author" content="Aashish Acharya" />
+  <meta name="londonmetID" content="20049382 " />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js"></script>
+
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #1b1d1f;
+      /* making the body a little darker for home page*/
+    }
+
+    .home {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      height: 75vh;
+      padding: 20px;
+    }
+
+    .slider {
+      /*giving fix radius to slider*/
+      width: 600px;
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+      /*so that the images will not show up until they are acessed by the button*/
+    }
+
+    .slides {
+      /*for each other image in the slider*/
+      flex: 75%;
+      width: 800%;
+      height: 400px;
+      display: flex;
+    }
+
+    .slides input {
+      /*the input button will not show but rather accessed by clicking on the buttons in the bottom of an image*/
+      display: none;
+    }
+
+    .slide {
+      width: 600px;
+      height: 400px;
+      transition: 1s;
+    }
+
+    .navManual {
+      /*manual navigation between the images/slides*/
+      position: absolute;
+      width: 600px;
+      display: flex;
+      justify-content: center;
+      margin-top: 410px;
+    }
+
+    .btnManual {
+      /*the buttons on the bottom of the slider*/
+      border: 2px solid #86c232;
+      padding: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btnManual:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .btnManual:hover {
+      background: #86c232;
+    }
+
+    /*This series of CSS commands are so that when a button is clicked, the next image in the slider is shwon
+    * As each image width is 600px, we substracted -600px on each button click
+    */
+    #radio1:checked~.first {
+      margin-left: 0;
+    }
+
+    #radio2:checked~.first {
+      margin-left: -600px;
+    }
+
+    #radio3:checked~.first {
+      margin-left: -1200px;
+    }
+
+    #radio4:checked~.first {
+      margin-left: -1800px;
+    }
+
+    #radio5:checked~.first {
+      margin-left: -2400px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- creating the navigation bar at the top of the page
+  All the pages will have the same navigation bar
+  -->
+  <nav class="navbar">
+    <div class="staticName"><a href="">Aashish Acharya |</a></div>
+    <ul class="menu">
+      <li><a class="current" href="home.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- creating the main home part -->
+  <div class="container">
+    <div class="home">
+      <div class="intro" style="color: #fff; padding-right: 100px; font-size: 20px">
+        <h1 style="color:#86c232; font-size: 25px;">Hello</h1>
+        <p><span>I am <span style="color:#86c232; font-size: 30px;">Aashish Acharya</span></p>
+      </div>
+      <!-- image slider for home page-->
+      <div class="slider">
+        <div class="slides">
+          <!--making buttons to change image-->
+          <input type="radio" name="radiobtn" id="radio1" />
+          <input type="radio" name="radiobtn" id="radio2" />
+          <input type="radio" name="radiobtn" id="radio3" />
+          <input type="radio" name="radiobtn" id="radio4" />
+          <input type="radio" name="radiobtn" id="radio5" />
+          <!--slide images-->
+          <div class="slide first">
+            <img src="images/rusty.jpg" alt="rusty bike near dorm" height="400" width="600" />
+          </div>
+          <div class="slide">
+            <img src="images/dawn2.jpg" alt="dawn from dorm" height="400" width="600" />
+          </div>
+          <div class="slide">
+            <img src="images/dawn1.jpg" alt="dawn from dorm" height="400" width="600" />
+          </div>
+          <div class="slide">
+            <img src="images/chessington.jpg" alt="at chessington park boat ride" height="400" width="600" />
+          </div>
+          <div class="slide">
+            <img src="images/birmingham.jpg" alt="late night in birmingham with swans" height="400" width="600" />
+          </div>
+          <!--manual navigation between the slides-->
+          <div class="navManual">
+            <label for="radio1" class="btnManual"></label>
+            <label for="radio2" class="btnManual"></label>
+            <label for="radio3" class="btnManual"></label>
+            <label for="radio4" class="btnManual"></label>
+            <label for="radio5" class="btnManual"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <!-- footer
+    All the pages will have the same footer. The footer will contain social media information
+    -->
+    <div class="footer">
+      <div class="footer-content">
+        <p style="font-size: 20px; color: #86c232">CONNECT WITH ME</p>
+        <ul class="socialLinks">
+          <li class="logo">
+            <a href="">
+              <img src="logos/github.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/email.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/instagram.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/twitter.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/youtube.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/discord.png" width="40" height="40" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">&copy; Aashish Acharya | CourseWork 3</div>
+    </div>
+  </footer>
+</body>
+
+</html>

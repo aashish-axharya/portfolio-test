@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CV</title>
+  <meta name="description" content="Info System Coursework 3" />
+  <meta name="author" content="Aashish Acharya" />
+  <meta name="londonmetID" content="20049382 " />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js"></script>
+
+  <style>
+    .cv {
+      /* making the text color white so that the text will stand out well in the grey background*/
+      color: #fff;
+      text-align: left;
+    }
+
+    .cv p {
+      font-size: 17px;
+    }
+
+    .cv li {
+      font-size: 18px;
+    }
+
+    .pfp {
+      /* so that the profile picture will stay in the center and on the right side of the td*/
+      display: flex;
+    }
+
+    .right {
+      flex: 30%;
+    }
+
+    .left {
+      flex: 70%;
+    }
+
+    h2 {
+      text-decoration: underline;
+      color: #86c232;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      /*giving a border to the outside of the table to indicate where the CV is*/
+      border: 2px solid #86c232;
+      padding: 20px;
+    }
+
+    .download {
+      /*for the download putton*/
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    .download button {
+      /*styling the download button to make it consistent with the page aesthetic*/
+      border: 2px solid white;
+      width: 100px;
+      background-color: #222629;
+      color: white;
+      width: 100px;
+      height: 40px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="staticName"><a href="">Aashish Acharya |</a></div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="current" href="cv.html">CV</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container" style="margin-top: 10%">
+    <div class="cv">
+      <!--The CV is enclosed in a table to give an easier and proper layout-->
+      <table width=75% align="center">
+        <tr>
+          <th style="text-align: center;">
+            <h1>CV</h1>
+          </th>
+        </tr>
+        <tr>
+          <th class="pfp">
+            <div class="left">
+              <h1 style="color: #86c232;">Aashish Acharya</h1>
+              <p>Lokanthali, Bhaktapur</p>
+              <p>email: aashish.acharya006@gmail.com</p>
+            </div>
+            <div class="right">
+              <img src="images/cv pfp.jpg" height="180" width="160" alt="pfp">
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <h2 style>Profile</h2>
+            <p>A highly motivated individual looking to utilize every opportunity he is given. Has good experience in
+              living in a multi-national community and is keen on learning different cultures. Has good adaptability
+              capabilities and is really hardworking at what he does. Is not afraid to face challenges and work under
+              pressure.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Education</h2>
+            <p>University: Islignton College</p>
+            <p>Qualifications: Bsc Computing</p>
+            <p>Status: Ongoing</p>
+            <br>
+            <p>School: Claremont Senior School</p>
+            <p>Qualifications: British A levels</p>
+            <p>Subjects: Physics, Mathematics, Computer Science</p>
+            <br>
+            <p>School: SOS HGS, Nepal</p>
+            <p>Qualifications: SEE (Secondary Education Examination)</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Work Experience</h2>
+            <ul>
+              <li>We Inspire Nepal and Gratia Center (Nov 2019 - Jan 2020)</li>
+              <p>Intership - Worked on the effective execution of projects such as U.S Embassy Youth Council-USYC and
+                The Female Champions(UNICEF).</p>
+              <li>Alfa Entertainment and Events (June 2019 - Sept 2019) </li>
+              <p>I voluntereed in marketing and event management for Alfa. Worked in the Robotics - Battle of Titans
+                project.</p>
+              <li>Vice president of School Red Cross Society</li>
+              <p>I worked as the vice president of the school Red Cross Society for a year. I was a member for a total
+                of 2 years. I also partook in a training session with Red Cross UK to effectively handle different
+                scenarios.</p>
+              <li>Toofan Communications (Jan 2020 - April 2020)</li>
+              <p>I worked in data entry and communcations for the company until the pandemic started.</p>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Academic and Extracurricular Achievements</h2>
+            <p>I was very fortunate to receive a scholarship for Pestalozzi Village to study A levels in the UK. I was
+              one of the three students chosen from Nepal after a competitive application and examination procedure,
+              among 15 highly achieving students in Nepal</p>
+            <p>I was very active in my college Basketball and Chess team in Claremont. I have interests in Music,
+              especially playing the guitar. I won Mr.Rotaract in Pestalozzi through my guitar skills. </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Careers and Interests</h2>
+            <p>I have a keen interest in the field of Computer Science and would like to become a software developer. I
+              enjoy programming and learning the ins and outs of softwares and how they work. I believe that it helps to
+              develop logical sense and analytical skills</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Hobbies and Languages</h2>
+            <p style="text-decoration: underline;">Languages</p>
+            <p>Nepali - Speak, Read, Write, Mother tongue</p>
+            <p>English - Speak, Read, Write</p>
+            <p>Hindi - Speak, Read</p>
+            <p style="text-decoration: underline;">Hobbies</p>
+            <p>Guitar, Basketball, Photography, Reading</p>
+          </td>
+        </tr>
+      </table>
+      <div class="download">
+        <!--calling the download function that can be found in the script section below the body section-->
+        <button onclick="download()"> Download </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <!-- footer-->
+    <div class="footer">
+      <div class="footer-content">
+        <p style="font-size: 20px; color: #86c232">CONNECT WITH ME</p>
+        <ul class="socialLinks">
+          <li class="logo">
+            <a href="">
+              <img src="logos/github.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/email.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/instagram.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/twitter.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/youtube.png" width="40" height="40" />
+            </a>
+          </li>
+          <li class="logo">
+            <a href="">
+              <img src="logos/discord.png" width="40" height="40" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">&copy; Aashish Acharya | CourseWork 3</div>
+    </div>
+  </footer>
+</body>
+<script>
+  //when the button is clicked the image of the CV page will downloaded. The image will be accesssed from the images folder 
+  function download() {
+    alert("Your download is loading...");
+    var a = document.createElement('a');
+    a.href = "images/cv.png"; //downloading image from the images folder
+    a.download = "AashishCV.png";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+</script>
+
+</html>
